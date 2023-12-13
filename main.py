@@ -71,13 +71,14 @@ if answer == 'y':
                 if parsed_day == 1:
                     print(f"\033[32m{story}\033[0m")
 
-                if parsed_day == 1:
+                if parsed_day == 2:
                     print(f"\033[32m{guessStory}\033[0m")
 
                 elif parsed_day == 3:
                     subprocess.run(["python", "./python/guessNumber.py"])
 
-                elif parsed_day == 3:
+                elif parsed_day == 4:
+                    print("\033[31mSanta need to collect 50 cookies, can you help him?\033[0m")
                     subprocess.run(["python", "./python/cookieClicker.py"])
 
                 elif parsed_day == 5:
@@ -94,6 +95,7 @@ if answer == 'y':
                     subprocess.run(["python", "./python/christmas_tree.py"])
 
                 elif parsed_day == 9:
+                    print("\033[31mSanta need to collect 15 gifts, can you help him?\033[0m")
                     subprocess.run(["python", "./python/santaGame.py"])
 
                 elif parsed_day == 10:
