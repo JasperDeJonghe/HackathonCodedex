@@ -10,7 +10,7 @@ def play_midi(midi_file):
         clock.tick(30)
 
 
-midi_file_path = "python\song\Mariah_Carey_-_All_I_Want_For_Christmas_Is_You.mid"
+midi_file_path = "python\music\Mariah_Carey_-_All_I_Want_For_Christmas_Is_You.mid"
 
 play_midi(midi_file_path)
 
