@@ -43,7 +43,7 @@ with open("./text/diceStory.txt", "r") as file:
 current_date = datetime.now()
 early = input("Do you want to get acces to every gift? (y/n) ").lower()
 if early == "y":
-    current_day = 24
+    current_day = 25
 else:
     current_day = current_date.day
 
@@ -57,7 +57,7 @@ if answer == 'y':
             print(f"\033[31m{i}\033[0m \033[32m{once_opened_data[str(i)]}\033[0m")
 
     day_to_open = input("\nWhich day do you want to open? ")
-    if int(day_to_open) < current_day:
+    if int(day_to_open) < current_day+1:
         if day_to_open != "" and day_to_open.isdigit():
             parsed_day = int(day_to_open)
             if 1<= parsed_day <= 24:
